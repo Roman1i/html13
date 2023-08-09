@@ -1,0 +1,426 @@
+@import '../vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+}
+
+a {
+    text-decoration: none;
+    color: $textGray;
+}
+
+.center {
+    padding-left: calc(50vw - $contentWidth / 2);
+    padding-right: calc(50vw - $contentWidth / 2);
+    width: $contentWidth;
+}
+
+.header {
+    background-color: $darkGray;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    
+    &__logo {
+        display: flex;
+        align-items: end;
+        gap: 40px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: end;
+        gap: 30px;
+    }
+}
+
+.arrivals {
+    height: 148px;
+    background-color: #F8F3F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__header {
+        color: $mainPink;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+    }
+
+    &__path {
+        display: flex;
+        gap: 15px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+
+        &__3 {
+            font-weight: 700;
+            color: $mainPink;
+        }
+    }
+}
+
+.cart {
+    display: flex;
+    justify-content: end;
+
+    &__cart-content {
+        position: relative;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        margin-top: 96px;
+        margin-bottom: 72px;
+        position: absolute;
+        left: -770px;
+        gap: 40px;
+
+        &__item {
+            display: flex;
+            box-shadow: 17px 19px 24px 0px #00000021;
+            border: 1px solid #EAEAEA;
+
+            &__description {
+                display: flex;
+                flex-direction: column;
+                width: 262px;
+                padding-top: 22px;
+                padding-left: 31px;
+                gap: 6px;
+                font-family: Lato;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #575757;
+            }
+
+            &__name {
+                padding-bottom: 36px;
+                font-family: Lato;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 29px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #222222;
+            }
+
+            &__price {
+                color: $mainPink;
+            }
+
+            &__color {
+                color: #6F6E6E;
+            }
+
+            &__size {
+                color: #6F6E6E;
+            }
+
+            &__quantity {
+                width: 44px;
+                text-align: center;
+            }
+
+            &__cross {
+                height: 18px;
+                margin-top: 28px;
+                margin-right: 22px;
+            }
+
+            &__cross:hover path {
+                fill: $mainPink;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+
+        &__clear {
+            padding: 16px 40px;
+            border: 1px solid #A4A4A4;
+            transition: 0.3s;
+        }
+
+        &__clear:hover {
+            color:#ffffff;
+            background-color: $mainPink;
+        }
+
+        &__continue {
+            padding: 16px 40px;
+            border: 1px solid #A4A4A4;
+            transition: 0.3s;
+        }
+
+        &__continue:hover {
+            color:#ffffff;
+            background-color: $mainPink;
+        }
+    }
+    
+    &__data {
+        margin-top: 113px;
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+
+        &__adress {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &__header {
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #222222;
+            }
+
+            &__input {
+                padding: 13px 16px 16px;
+                border: 1px solid #A4A4A4;
+                font-family: Lato;
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 16px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+            &__button {
+                margin-top: 3px;
+                font-family: Lato;
+                font-size: 11px;
+                font-weight: 300;
+                line-height: 13px;
+                letter-spacing: 0em;
+                text-align: center;
+                border: 1px solid #A4A4A4;
+                padding-top: 10px;
+                padding-bottom: 12px;
+                width: 100px;
+                transition: 0.3s;
+            }
+
+            &__button:hover {
+                color: #FBFBFB;
+                background-color: $mainPink;
+                border-color: #FBFBFB;
+            }
+        }
+
+        &__order {
+            background-color: #F5F3F3;
+            margin-bottom: 342px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            padding: 42px;
+            padding-top: 39px;
+
+            &__sub {
+                font-family: Lato;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 13px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #4A4A4A;
+                padding-bottom: 12px;
+
+                &__price {
+                    padding-left: 30px;
+                }
+            }
+
+            &__grand {
+                padding-bottom: 21px;
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #222222;
+
+                &__price {
+                    padding-left: 30px;
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: $mainPink;
+                }
+            }
+
+            &__line {
+                height: 1px;
+                width: 275px;
+                background: #E2E2E2;
+                margin-bottom: 17px;
+            }
+
+            &__checkout {
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #FFFFFF;
+                background-color: $mainPink;
+                align-self: center;
+                padding: 16px 42px;
+                border: 1px solid $mainPink;
+                transition: 0.3s;
+            }
+
+            &__checkout:hover {
+                color: $mainPink;
+                background-color: #FFFFFF;
+                
+            }
+        }
+    }
+}
+
+.subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 13.94vw;
+    height: 448px;
+    background-image: url(../img/subsctibe_bg.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+
+    &__person {
+        width: 360px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+
+        &__img {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__send {
+        width: 557px;
+
+        &__header1 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        &__header2 {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        &__mail {
+            display: flex;
+            justify-content: center;
+
+            &__email {
+                background-color: #E1E1E1;
+                padding: 6.5px 22px;
+                border: none;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px ;
+            }
+
+            &__email:hover {
+                background-color: #fff;
+            }
+
+            &__submit {
+                color: #FBFBFB;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+                text-align: center;
+                background-color: $mainPink;
+                padding: 6.5px 0px;
+                border: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px ;
+                width: 85px;
+                height: 20px;
+                padding: 6.5px 7.5px;
+                transition: 0.3s;
+            }
+
+            &__submit:hover {
+                background-color: #FBFBFB;
+                color: $mainPink;
+                border: 1px solid $mainPink;
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: #222224;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 79px;
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
+
+    &__links {
+        display: flex;
+        gap: 7.3px;
+
+        &__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32px;
+            width: 32px;
+            background-color: #FFFFFF;
+            transition: 0.2s;
+        }
+
+        &__link:hover {
+            background-color: #F16D7F;
+        }
+
+        &__link:hover path {
+            fill: #FFFFFF;
+        }
+    }
+}

@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50vw - 570px);
+  padding-right: calc(50vw - 570px);
+}
+
+.header {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.header__logo {
+  display: flex;
+  align-items: end;
+  gap: 40px;
+}
+.header__buttons {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+}
+
+.arrivals {
+  height: 148px;
+  background-color: #F8F3F4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrivals__header {
+  color: #F16D7F;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
+.arrivals__path {
+  display: flex;
+  gap: 15px;
+  color: #636363;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+}
+.arrivals__path__3 {
+  font-weight: 700;
+  color: #F16D7F;
+}
+
+.product {
+  background-color: #F7F7F7;
+  border: 1px solid #EAEAEA;
+  height: 777px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.product__arrow {
+  background: rgba(42, 42, 42, 0.1490196078);
+  padding: 12px 16px;
+  transition: 0.3s;
+}
+.product__arrow:hover path {
+  fill: #F16D7F;
+}
+
+.description {
+  position: absolute;
+  width: 1140px;
+  margin-top: 1200px;
+  margin-left: calc(50vw - 570px);
+  margin-right: calc(50vw - 570px);
+  text-align: center;
+  background-color: #FFF;
+  border: 1px solid #EAEAEA;
+}
+.description__collection {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #F16D7F;
+  padding-top: 64px;
+  padding-bottom: 12px;
+}
+.description__bar {
+  width: 64px;
+  height: 3px;
+  background-color: #F16D7F;
+  margin: 0 auto;
+}
+.description__productName {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #4D4D4D;
+  padding-top: 12px;
+  padding-bottom: 48px;
+}
+.description__productDescription {
+  width: 555px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #5E5E5E;
+  padding-bottom: 32px;
+  margin: 0 auto;
+}
+.description__price {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #F16D7F;
+  padding-bottom: 64px;
+}
+.description__bar2 {
+  width: 642px;
+  height: 1px;
+  background-color: #EAEAEA;
+  margin: 0 auto;
+}
+.description__properties {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #6F6E6E;
+  padding-top: 64px;
+  padding-bottom: 48px;
+}
+.description__properties__item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.description__cart {
+  width: 212px;
+  padding: 16px 24px;
+  margin: 0 auto;
+  border: 1px solid #F16D7F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #F16D7F;
+  margin-bottom: 64px;
+  transition: 0.3s;
+}
+.description__cart:hover {
+  background-color: #F16D7F;
+  color: #FFF;
+}
+.description__cart:hover path {
+  fill: #FFF;
+}
+
+.other {
+  margin-top: 664px;
+  margin-bottom: 128px;
+}
+.other__items {
+  display: flex;
+  gap: 30px;
+}
+.other__items__item {
+  background: #F8F8F8;
+  width: 360px;
+}
+.other__items__item__info {
+  padding-left: 16px;
+  padding-top: 24px;
+}
+.other__items__item__name {
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #000;
+}
+.other__items__item__description {
+  margin-bottom: 16px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5D5D5D;
+}
+.other__items__item__price {
+  margin-bottom: 24px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #F16D7F;
+}
+
+.subscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13.94vw;
+  height: 448px;
+  background-image: url(../img/subsctibe_bg.png);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.subscription__person {
+  width: 360px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.subscription__person__img {
+  margin-bottom: 30px;
+}
+.subscription__send {
+  width: 557px;
+}
+.subscription__send__header1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.subscription__send__header2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.subscription__send__mail {
+  display: flex;
+  justify-content: center;
+}
+.subscription__send__mail__email {
+  background-color: #E1E1E1;
+  padding: 6.5px 22px;
+  border: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.subscription__send__mail__email:hover {
+  background-color: #fff;
+}
+.subscription__send__mail__submit {
+  color: #FBFBFB;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: center;
+  background-color: #F16D7F;
+  padding: 6.5px 0px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 85px;
+  height: 20px;
+  padding: 6.5px 7.5px;
+  transition: 0.3s;
+}
+.subscription__send__mail__submit:hover {
+  background-color: #FBFBFB;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+}
+
+.copyright {
+  background-color: #222224;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 79px;
+}
+.copyright__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #FBFBFB;
+}
+.copyright__links {
+  display: flex;
+  gap: 7.3px;
+}
+.copyright__links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background-color: #FFFFFF;
+  transition: 0.2s;
+}
+.copyright__links__link:hover {
+  background-color: #F16D7F;
+}
+.copyright__links__link:hover path {
+  fill: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
