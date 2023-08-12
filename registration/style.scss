@@ -309,3 +309,44 @@ a {
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .center {
+        width: 736px;
+        padding-left: calc(50vw - 736px / 2);
+        padding-right: calc(50vw - 736px / 2);
+    }
+
+    .registr {
+        gap: 22px;
+        padding-top: 40px;
+        padding-bottom: 96px;
+
+        &__data {
+            width: 736px;
+        }
+
+        &__info {
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;            
+        }
+    }
+
+    .subscription {
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
+        height: 693px;
+        background-size: 245vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .subscription {
+        background-size: 323vw;
+    }
+}

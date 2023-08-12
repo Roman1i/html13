@@ -401,3 +401,59 @@ a {
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .center {
+        width: 736px;
+        padding-left: calc(50vw - 736px / 2);
+        padding-right: calc(50vw - 736px / 2);
+    }
+
+    .sort__filter {
+        left: calc(50vw - 736px / 2);
+    }
+
+    .sort__properties {
+        left: calc(50vw + 70px);
+    }
+
+    .products {
+
+        &__items {
+            gap: 16px;
+
+            &__item {
+
+                &__last {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .features {
+        flex-direction: column;
+        padding-top: 48px;
+        padding-bottom: 64px;
+        gap: 48px;
+
+        &__item {
+            margin: 0 auto;
+            width: 360px;
+        }
+    }
+
+    .subscription {
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
+        height: 693px;
+        background-size: 245vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .subscription {
+        background-size: 323vw;
+    }
+}

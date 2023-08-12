@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Lato;
 }
 
 a {
@@ -363,6 +364,40 @@ a {
     }
 }
 
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50vw - 736px / 2);
+        padding-right: calc(50vw - 736px / 2);
+    }
 
+    .description {
+        width: 100vw;
+        margin-top: 1365px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .other__items {
+        gap: 16px;
+    }
+
+    .other__items__item__3 {
+        display: none;
+    }
+
+    .subscription {
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
+        height: 693px;
+        background-size: 245vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .subscription {
+        background-size: 323vw;
+    }
+}
 
 
