@@ -486,3 +486,150 @@ a {
         background-size: 323vw;
     }
 }
+
+@media (max-width: 425px) {
+    .center {
+        box-sizing: border-box;
+        width: 425px;
+        padding-left: calc(50vw - 360px / 2);
+        padding-right: calc(50vw - 360px / 2);
+    }
+    
+    .header {
+        padding: 18px 16px;
+    }
+
+    .logo {
+        height: 38px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .arrivals {
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .cart {
+        padding-bottom: 96px;
+
+        &__cart-content {
+            width: 360px;
+        }
+
+        &__items {
+            margin-bottom: 48px;
+            margin-top: 40px;
+            gap: 32px;
+
+            &__item {
+                width: 360px;
+                height: 188px;
+                
+                &__name {
+                    font-size: 16px;
+                    line-height: 19px;
+                    padding-bottom: 26px;
+                }
+
+                &__img {
+                    width: 144px;
+                    height: 188px;
+                }
+
+                &__description {
+                    padding-top: 14px;
+                    padding-left: 17px;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    margin: 0;
+                }
+
+                &__cross {
+                    margin-top: 17px;
+                    margin-right: 12px;
+                }
+            }
+        }
+
+        &__buttons {
+            margin-top: 0;
+            gap: 9px;
+
+            &__clear {
+                padding: 9px 18px;
+                font-family: Lato;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14px;
+                letter-spacing: 0em;
+                text-align: center;
+                
+            }
+
+            &__continue {
+                padding: 9px 18px;
+                font-family: Lato;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14px;
+                letter-spacing: 0em;
+                text-align: center;
+                
+            }
+        }
+
+        &__data {
+            width: 360px;
+            flex-direction: column;
+            gap: 48px;
+        }
+    }
+
+
+
+    .subscription {
+        background-size: 465vw;
+        height: 550px;
+
+        &__text {
+            font-family: Lato;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+        
+        &__send {
+            width: 360px;
+        }
+    }
+
+    .copyright {
+        height: 143px;
+        flex-direction: column-reverse;
+        gap: 25px;
+        justify-content: center;
+    }
+}
+
+
+@media(max-width: 375px) {
+    .center {
+        width: 375px;
+        padding-left: calc(50vw - 360px / 2);
+        padding-right: calc(50vw - 360px / 2);
+    }
+
+    .subscription {
+        background-size: 525vw;
+    }
+}

@@ -350,3 +350,94 @@ a {
         background-size: 323vw;
     }
 }
+
+@media (max-width: 425px) {
+    .center {
+        box-sizing: border-box;
+        width: 425px;
+        padding-left: calc(50vw - 360px / 2);
+        padding-right: calc(50vw - 360px / 2);
+    }
+    
+    .header {
+        padding: 18px 16px;
+    }
+
+    .logo {
+        height: 38px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .arrivals {
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .registr {
+        flex-direction: column;
+        gap: 40px;
+
+        &__data {
+            width: 360px;
+
+            &__name {
+
+            }
+
+            &__button {
+                margin-top: 15px;
+            }
+        }
+
+        &__info {
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+    }
+
+    .subscription {
+        background-size: 465vw;
+        height: 550px;
+
+        &__text {
+            font-family: Lato;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+        
+        &__send {
+            width: 360px;
+        }
+    }
+
+    .copyright {
+        height: 143px;
+        flex-direction: column-reverse;
+        gap: 25px;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 375px) {
+    .center {
+        width: 375px;
+        padding-left: calc(50vw - 360px / 2);
+        padding-right: calc(50vw - 360px / 2);
+    }
+
+    .subscription {
+        background-size: 525vw;
+    }
+}

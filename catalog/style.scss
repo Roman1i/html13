@@ -242,6 +242,45 @@ a {
                 color: #F16D7F;
             }
 
+            &__last {
+                background: #F8F8F8;
+            width: 360px;
+
+            &__info {    
+                padding-left: 16px;
+                padding-top: 24px;
+            }
+
+            &__name {
+                margin-bottom: 16px;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 16px;
+                color: #000;
+            }
+
+            &__description {
+                margin-bottom: 16px;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 17px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #5D5D5D;
+            }
+
+            &__price {
+                margin-bottom: 24px;
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #F16D7F;
+            }
+            }
         }
     }
 }
@@ -455,5 +494,100 @@ a {
 @media (max-width: 768px) {
     .subscription {
         background-size: 323vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .center {
+        box-sizing: border-box;
+        width: 425px;
+        padding-left: calc(50vw - 360px / 2);
+        padding-right: calc(50vw - 360px / 2);
+    }
+    
+    .header {
+        padding: 18px 16px;
+    }
+
+    .logo {
+        height: 38px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .arrivals {
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .sort {
+
+        &__filter {
+            left: calc(50vw - 180px);
+            padding-top: 0;
+            top: 24px;
+
+            &__name {
+                display: none;
+            }
+
+            &__picture {
+                width: 37px;
+                height: 25px;
+            }
+        }
+
+        &__properties {
+            top: 24px;
+            left: calc(50vw + -120px);
+        }
+    }
+
+    .products {
+        margin-top: 81px;
+        &__items {
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+    }
+
+    .subscription {
+        background-size: 465vw;
+        height: 550px;
+
+        &__text {
+            font-family: Lato;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+        
+        &__send {
+            width: 360px;
+        }
+    }
+
+    .copyright {
+        height: 143px;
+        flex-direction: column-reverse;
+        gap: 25px;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 375px) {
+    .center {
+        width: 375px;
+        padding-left: calc(50vw - 360px / 2);
+        padding-right: calc(50vw - 360px / 2);
+    }
+
+    .subscription {
+        background-size: 525vw;
     }
 }

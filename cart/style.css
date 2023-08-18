@@ -422,4 +422,123 @@ a {
   .subscription {
     background-size: 323vw;
   }
+}
+@media (max-width: 425px) {
+  .center {
+    box-sizing: border-box;
+    width: 425px;
+    padding-left: calc(50vw - 180px);
+    padding-right: calc(50vw - 180px);
+  }
+  .header {
+    padding: 18px 16px;
+  }
+  .logo {
+    height: 38px;
+  }
+  .button {
+    display: none;
+  }
+  .arrivals {
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+  .cart {
+    padding-bottom: 96px;
+  }
+  .cart__cart-content {
+    width: 360px;
+  }
+  .cart__items {
+    margin-bottom: 48px;
+    margin-top: 40px;
+    gap: 32px;
+  }
+  .cart__items__item {
+    width: 360px;
+    height: 188px;
+  }
+  .cart__items__item__name {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 26px;
+  }
+  .cart__items__item__img {
+    width: 144px;
+    height: 188px;
+  }
+  .cart__items__item__description {
+    padding-top: 14px;
+    padding-left: 17px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+  }
+  .cart__items__item__cross {
+    margin-top: 17px;
+    margin-right: 12px;
+  }
+  .cart__buttons {
+    margin-top: 0;
+    gap: 9px;
+  }
+  .cart__buttons__clear {
+    padding: 9px 18px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .cart__buttons__continue {
+    padding: 9px 18px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .cart__data {
+    width: 360px;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .subscription {
+    background-size: 465vw;
+    height: 550px;
+  }
+  .subscription__text {
+    font-family: Lato;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .subscription__send {
+    width: 360px;
+  }
+  .copyright {
+    height: 143px;
+    flex-direction: column-reverse;
+    gap: 25px;
+    justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  .center {
+    width: 375px;
+    padding-left: calc(50vw - 180px);
+    padding-right: calc(50vw - 180px);
+  }
+  .subscription {
+    background-size: 525vw;
+  }
 }/*# sourceMappingURL=style.css.map */
